@@ -1,0 +1,572 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,600,700);
+/* line 17, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 58, icon/*.png */
+.icon-sprite, .icon-arrow-l, .icon-arrow-r, .icon-search-button, .flex-direction-nav .flex-next, .flex-direction-nav .flex-prev {
+  background: url('../img/icon-sdcbbc9037f.png') no-repeat;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-arrow-l {
+  background-position: 0 -47px;
+  height: 32px;
+  width: 16px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-arrow-r {
+  background-position: 0 -15px;
+  height: 32px;
+  width: 16px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-search-button {
+  background-position: 0 0;
+  height: 15px;
+  width: 15px;
+}
+
+/* line 7, ../sass/_sprites.scss */
+.flex-direction-nav .flex-next {
+  background-position: 0 -15px;
+  height: 32px;
+  width: 16px;
+}
+
+/* line 11, ../sass/_sprites.scss */
+.flex-direction-nav .flex-prev {
+  background-position: 0 -47px;
+  height: 32px;
+  width: 16px;
+}
+
+/* line 1, ../sass/_typography.scss */
+a, input {
+  outline: none;
+}
+
+/* line 6, ../sass/_typography.scss */
+a {
+  text-decoration: none;
+  color: #507d29;
+}
+/* line 10, ../sass/_typography.scss */
+a.small-link {
+  font-size: 0.75em;
+}
+
+/* line 15, ../sass/_typography.scss */
+.orange {
+  color: #ff8800;
+}
+
+/* line 19, ../sass/_typography.scss */
+b, strong, .bold {
+  font-weight: 700;
+}
+
+/* line 23, ../sass/_typography.scss */
+i, em, .cursive {
+  font-style: italic;
+}
+
+/* line 3, ../sass/_layout.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/_layout.scss */
+.left {
+  float: left;
+}
+
+/* line 11, ../sass/_layout.scss */
+.right {
+  float: right;
+}
+
+/* line 15, ../sass/_layout.scss */
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/* line 21, ../sass/_layout.scss */
+body {
+  background: black;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Raleway", Helvetica, sans-serif;
+  line-height: 1.25em;
+  color: white;
+}
+
+/* line 32, ../sass/_layout.scss */
+#wrapper {
+  background: url(../img/bg.jpg) 50% 0 transparent no-repeat;
+}
+
+/* line 36, ../sass/_layout.scss */
+.container {
+  width: 980px;
+  padding: 0 20px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.82);
+}
+
+/* line 43, ../sass/_layout.scss */
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+/* line 47, ../sass/_layout.scss */
+.container-460 {
+  width: 460px;
+}
+
+/* line 51, ../sass/_layout.scss */
+.container-220 {
+  width: 220px;
+}
+
+/* line 3, ../sass/_header.scss */
+header#header {
+  padding-top: 9px;
+  position: relative;
+  height: 168px;
+}
+/* line 10, ../sass/_header.scss */
+header#header ul.s-list li {
+  display: block;
+  float: left;
+  margin-right: 13px;
+}
+/* line 17, ../sass/_header.scss */
+header#header .s-block {
+  width: 150px;
+  height: 29px;
+  line-height: 29px;
+  position: relative;
+  margin-left: 20px;
+}
+/* line 24, ../sass/_header.scss */
+header#header .s-block input[type=text] {
+  height: 29px;
+  display: block;
+  width: 100%;
+  padding: 0 15px 0 14px;
+  color: #8dc85a;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  border-radius: 14px;
+  background: #203a07;
+  border: 0;
+}
+/* line 38, ../sass/_header.scss */
+header#header .s-block input[type=submit] {
+  border: none;
+  color: transparent;
+  position: absolute;
+  top: 7px;
+  right: 6px;
+}
+/* line 47, ../sass/_header.scss */
+header#header .logo-block {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -95px;
+}
+
+/* line 55, ../sass/_header.scss */
+nav#navigation {
+  padding-top: 24px;
+}
+/* line 57, ../sass/_header.scss */
+nav#navigation ul.menu {
+  overflow: hidden;
+}
+/* line 59, ../sass/_header.scss */
+nav#navigation ul.menu li {
+  border-bottom: 1px solid #37551c;
+  display: block;
+  float: left;
+}
+/* line 64, ../sass/_header.scss */
+nav#navigation ul.menu li a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.125em;
+}
+/* line 72, ../sass/_header.scss */
+nav#navigation ul.menu li.menu-item-1 {
+  padding-right: 43px;
+}
+/* line 76, ../sass/_header.scss */
+nav#navigation ul.menu li.menu-item-2 {
+  padding-right: 35px;
+}
+/* line 80, ../sass/_header.scss */
+nav#navigation ul.menu li.menu-item-3 {
+  padding-right: 43px;
+  margin-right: 172px;
+}
+/* line 85, ../sass/_header.scss */
+nav#navigation ul.menu li.menu-item-4 {
+  padding-left: 35px;
+}
+/* line 88, ../sass/_header.scss */
+nav#navigation ul.menu li.menu-item-5 {
+  text-align: right;
+  padding-left: 62px;
+}
+
+/* line 4, ../sass/_content-part.scss */
+.content-part .i-social div {
+  margin-right: 20px;
+  float: left;
+}
+/* line 8, ../sass/_content-part.scss */
+.content-part .i-social div:last-child {
+  margin-right: 0;
+}
+/* line 14, ../sass/_content-part.scss */
+.content-part .i-block {
+  position: relative;
+}
+/* line 17, ../sass/_content-part.scss */
+.content-part .i-block span.i-text {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  background: rgba(0, 0, 0, 0.52);
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-size: 1.063em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+/* line 38, ../sass/_content-part.scss */
+.content-part .i-block.w-text {
+  height: 220px;
+  text-align: center;
+}
+/* line 42, ../sass/_content-part.scss */
+.content-part .i-block.w-text p {
+  display: table-cell;
+  width: 220px;
+  height: 185px;
+  vertical-align: middle;
+  color: black;
+  font-size: 1.063em;
+  font-weight: 600;
+  padding: 0 20px;
+}
+/* line 56, ../sass/_content-part.scss */
+.content-part .i-block.green-bg {
+  background: #91d667;
+  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.44);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.44);
+}
+/* line 61, ../sass/_content-part.scss */
+.content-part .i-block.blue-bg {
+  background: #b4e7f8;
+  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.44);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.44);
+}
+/* line 66, ../sass/_content-part.scss */
+.content-part .i-block .c-flag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* line 72, ../sass/_content-part.scss */
+.content-part .i-block .s-flag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 32px;
+  width: 31px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  border-radius: 16px;
+}
+/* line 80, ../sass/_content-part.scss */
+.content-part .i-block .s-flag.s-dark {
+  -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+}
+/* line 84, ../sass/_content-part.scss */
+.content-part .i-block .s-flag.s-light {
+  -webkit-box-shadow: 0 0 9px rgba(255, 255, 255, 0.65);
+  -moz-box-shadow: 0 0 9px rgba(255, 255, 255, 0.65);
+  box-shadow: 0 0 9px rgba(255, 255, 255, 0.65);
+}
+/* line 88, ../sass/_content-part.scss */
+.content-part .i-block .s-flag img {
+  position: relative;
+  left: -1px;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+/* line 3, ../sass/_slider.scss */
+.flexslider {
+  margin: 0 0 38px;
+  padding: 2px 0;
+  border-top: 1px solid #3c5e1f;
+  border-bottom: 1px solid #3c5e1f;
+}
+/* line 11, ../sass/_slider.scss */
+.flexslider ul.slides {
+  border-top: 1px solid #3c5e1f;
+  border-bottom: 1px solid #3c5e1f;
+  padding: 2px 0;
+}
+/* line 18, ../sass/_slider.scss */
+.flexslider ul.slides li {
+  position: relative;
+}
+/* line 22, ../sass/_slider.scss */
+.flexslider ul.slides li .text {
+  position: absolute;
+  width: 100%;
+  bottom: 13px;
+  padding: 0 20px;
+  text-align: center;
+}
+/* line 29, ../sass/_slider.scss */
+.flexslider ul.slides li span {
+  display: block;
+}
+/* line 32, ../sass/_slider.scss */
+.flexslider ul.slides li span.big {
+  font-size: 2em;
+  line-height: 1em;
+}
+
+/* line 40, ../sass/_slider.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 41, ../sass/_slider.scss */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+/* line 42, ../sass/_slider.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+/* line 45, ../sass/_slider.scss */
+.slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 46, ../sass/_slider.scss */
+html[xmlns] .slides {
+  display: block;
+}
+
+/* line 47, ../sass/_slider.scss */
+* html .slides {
+  height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+/* line 52, ../sass/_slider.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider Default Theme
+*********************************/
+/* line 56, ../sass/_slider.scss */
+.flexslider {
+  position: relative;
+}
+
+/* line 57, ../sass/_slider.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 58, ../sass/_slider.scss */
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+/* Direction Nav */
+/* line 60, ../sass/_slider.scss */
+.flex-direction-nav {
+  *height: 0;
+}
+
+/* line 61, ../sass/_slider.scss */
+.flex-direction-nav a {
+  display: block;
+  margin: -18px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: transparent;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* line 75, ../sass/_slider.scss */
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+
+/* line 76, ../sass/_slider.scss */
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
+}
+
+/* line 77, ../sass/_slider.scss */
+.flexslider:hover .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+
+/* line 78, ../sass/_slider.scss */
+.flexslider:hover .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+
+/* line 79, ../sass/_slider.scss */
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+  opacity: 1;
+}
+
+/* line 80, ../sass/_slider.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default;
+}
+
+/* line 81, ../sass/_slider.scss */
+.flex-direction-nav a.flex-next:before {
+  content: '';
+}
+
+@media screen and (max-width: 860px) {
+  /* line 85, ../sass/_slider.scss */
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+
+  /* line 86, ../sass/_slider.scss */
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}

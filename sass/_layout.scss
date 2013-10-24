@@ -1,0 +1,53 @@
+// base layout and helper classes
+
+*{
+  @include box-sizing(border-box);
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.clearfix:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+body{
+  background: $bg-black;
+  font:{
+    size: $font-16;
+    weight: $font-medium;
+    family: $font-raleway;
+  }
+  line-height: $line-height;
+  color: $color-white;
+}
+
+#wrapper{
+  background: url(../img/bg.jpg) 50% 0 transparent no-repeat;
+}
+
+.container{
+  width: $width-main;
+  padding: 0 $padding-main;
+  margin: 0 auto;
+  background: $bg-overlay;
+}
+
+.m-b-20{
+  margin-bottom: 20px;
+}
+
+.container-460{
+  width: 460px;
+}
+
+.container-220{
+  width: 220px;
+}

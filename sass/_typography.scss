@@ -1,0 +1,26 @@
+a, input{
+  outline: none;
+}
+
+
+a{
+  text-decoration: none;
+  color: $color-green;
+  
+  &.small-link{
+    font-size: $font-12;
+  }
+}
+
+.orange{
+  color: $color-orange;
+}
+
+b, strong, .bold{
+  font-weight: $font-bold;
+}
+
+i, em, .cursive{
+  font-style: italic;
+}
+

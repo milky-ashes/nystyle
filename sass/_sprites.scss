@@ -1,0 +1,13 @@
+$icon-sprite-dimensions: true;
+$icon-layout:smart;
+@import "icon/*.png";
+@include all-icon-sprites;
+$icons: sprite-map("icon/*.png");
+
+.flex-direction-nav .flex-next {
+  @include icon-sprite(arrow-r);
+}
+
+.flex-direction-nav .flex-prev {
+  @include icon-sprite(arrow-l);
+}
