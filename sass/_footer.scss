@@ -1,0 +1,38 @@
+footer#footer{
+  padding: 45px 0;
+  font:{
+    size: $font-12;
+  }
+  color: $color-green;
+  
+  ul{
+    text-align: center;
+    
+    li{
+      display: inline-block;
+      
+      &:after{
+        display: inline;
+        content: "|";
+      }
+      
+      &:last-child::after{
+        display: none;
+      }
+      
+      a{
+        margin: 0 5px;
+      }
+    }
+  }
+  
+  .f-bottom{
+    padding-left: 160px;
+    padding-top: 25px;
+    
+    img{
+      padding-right: 5px;
+      vertical-align: sub;
+    }
+  }
+}

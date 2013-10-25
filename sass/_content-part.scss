@@ -92,5 +92,66 @@
     }
   }
   
+  .i-block.back{
+    border: 1px solid $border-green;
+    position: relative;
+    padding: 10px;
+    height: 460px;
+    
+    .t-top{
+      padding-top: 25px;
+      span{
+        display: block;
+        font-size: $font-30;
+        line-height: 1em;
+        
+        &.name{
+          font-size: $font-53;
+          padding: 15px 0 20px;
+        }
+        
+      }
+      
+      .icon-close{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+    
+    .t-bottom{
+      overflow: hidden;
+      
+      .c-block{
+        margin-left: 260px;
+        padding-top: 75px;
+        
+        .l-part{
+          a:first-child{
+            
+           &::after{
+              display: inline;
+              content: "|";
+              padding-left: 4px;
+            } 
+          }
+        }
+      }
+    }
+    
+    .share-block{
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 177px;
+      text-align: justify;
+      
+      span{
+        vertical-align: super;
+        margin-right: 10px;
+      }
+    }
+  }
   //end
 }

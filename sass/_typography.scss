@@ -16,11 +16,34 @@ a{
   color: $color-orange;
 }
 
+.green{
+  color: $color-m-green;
+}
+
+.green-l{
+  color: $color-l-green
+}
+
+.blue{
+  color: $color-l-blue;
+}
+
+.blue-l{
+  color: $color-m-blue;
+}
+
 b, strong, .bold{
   font-weight: $font-bold;
 }
 
-i, em, .cursive{
+i, em{
   font-style: italic;
 }
 
+.p-cursive{
+  font-family: $font-parisienne;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}

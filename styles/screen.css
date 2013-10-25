@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Parisienne);
 /* line 17, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -64,42 +64,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 58, icon/*.png */
-.icon-sprite, .icon-arrow-l, .icon-arrow-r, .icon-search-button, .flex-direction-nav .flex-next, .flex-direction-nav .flex-prev {
-  background: url('../img/icon-sdcbbc9037f.png') no-repeat;
+/* line 66, icon/*.png */
+.icon-sprite, .icon-arrow-l, .icon-arrow-r, .icon-close, .icon-search-button, .flex-direction-nav .flex-next, .flex-direction-nav .flex-prev {
+  background: url('../img/icon-s51385b102f.png') no-repeat;
 }
 
 /* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-arrow-l {
-  background-position: 0 -47px;
+  background-position: 0 -58px;
   height: 32px;
   width: 16px;
 }
 
 /* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-arrow-r {
-  background-position: 0 -15px;
+  background-position: 0 -26px;
   height: 32px;
   width: 16px;
 }
 
 /* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-search-button {
+.icon-close {
   background-position: 0 0;
+  height: 11px;
+  width: 11px;
+}
+
+/* line 60, c:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-search-button {
+  background-position: 0 -11px;
   height: 15px;
   width: 15px;
 }
 
 /* line 7, ../sass/_sprites.scss */
 .flex-direction-nav .flex-next {
-  background-position: 0 -15px;
+  background-position: 0 -26px;
   height: 32px;
   width: 16px;
 }
 
 /* line 11, ../sass/_sprites.scss */
 .flex-direction-nav .flex-prev {
-  background-position: 0 -47px;
+  background-position: 0 -58px;
   height: 32px;
   width: 16px;
 }
@@ -125,13 +132,43 @@ a.small-link {
 }
 
 /* line 19, ../sass/_typography.scss */
+.green {
+  color: #379448;
+}
+
+/* line 23, ../sass/_typography.scss */
+.green-l {
+  color: #8dc85a;
+}
+
+/* line 27, ../sass/_typography.scss */
+.blue {
+  color: #3496fa;
+}
+
+/* line 31, ../sass/_typography.scss */
+.blue-l {
+  color: #86c2fe;
+}
+
+/* line 35, ../sass/_typography.scss */
 b, strong, .bold {
   font-weight: 700;
 }
 
-/* line 23, ../sass/_typography.scss */
-i, em, .cursive {
+/* line 39, ../sass/_typography.scss */
+i, em {
   font-style: italic;
+}
+
+/* line 43, ../sass/_typography.scss */
+.p-cursive {
+  font-family: "Parisienne", cursive;
+}
+
+/* line 47, ../sass/_typography.scss */
+.uppercase {
+  text-transform: uppercase;
 }
 
 /* line 3, ../sass/_layout.scss */
@@ -389,6 +426,63 @@ nav#navigation ul.menu li.menu-item-5 {
   position: relative;
   left: -1px;
 }
+/* line 95, ../sass/_content-part.scss */
+.content-part .i-block.back {
+  border: 1px solid #37551c;
+  position: relative;
+  padding: 10px;
+  height: 460px;
+}
+/* line 101, ../sass/_content-part.scss */
+.content-part .i-block.back .t-top {
+  padding-top: 25px;
+}
+/* line 103, ../sass/_content-part.scss */
+.content-part .i-block.back .t-top span {
+  display: block;
+  font-size: 1.875em;
+  line-height: 1em;
+}
+/* line 108, ../sass/_content-part.scss */
+.content-part .i-block.back .t-top span.name {
+  font-size: 3.313em;
+  padding: 15px 0 20px;
+}
+/* line 115, ../sass/_content-part.scss */
+.content-part .i-block.back .t-top .icon-close {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* line 123, ../sass/_content-part.scss */
+.content-part .i-block.back .t-bottom {
+  overflow: hidden;
+}
+/* line 126, ../sass/_content-part.scss */
+.content-part .i-block.back .t-bottom .c-block {
+  margin-left: 260px;
+  padding-top: 75px;
+}
+/* line 133, ../sass/_content-part.scss */
+.content-part .i-block.back .t-bottom .c-block .l-part a:first-child::after {
+  display: inline;
+  content: "|";
+  padding-left: 4px;
+}
+/* line 143, ../sass/_content-part.scss */
+.content-part .i-block.back .share-block {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 177px;
+  text-align: justify;
+}
+/* line 150, ../sass/_content-part.scss */
+.content-part .i-block.back .share-block span {
+  vertical-align: super;
+  margin-right: 10px;
+}
 
 /* FlexSlider Necessary Styles
 *********************************/
@@ -426,27 +520,32 @@ nav#navigation ul.menu li.menu-item-5 {
   font-size: 2em;
   line-height: 1em;
 }
+/* line 37, ../sass/_slider.scss */
+.flexslider ul.slides li span.medium {
+  font-size: 1.5em;
+  line-height: 1em;
+}
 
-/* line 40, ../sass/_slider.scss */
+/* line 45, ../sass/_slider.scss */
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
 }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-/* line 41, ../sass/_slider.scss */
+/* line 46, ../sass/_slider.scss */
 .flexslider .slides img {
   width: 100%;
   display: block;
 }
 
-/* line 42, ../sass/_slider.scss */
+/* line 47, ../sass/_slider.scss */
 .flex-pauseplay span {
   text-transform: capitalize;
 }
 
 /* Clearfix for the .slides element */
-/* line 45, ../sass/_slider.scss */
+/* line 50, ../sass/_slider.scss */
 .slides:after {
   content: "\0020";
   display: block;
@@ -456,12 +555,12 @@ nav#navigation ul.menu li.menu-item-5 {
   height: 0;
 }
 
-/* line 46, ../sass/_slider.scss */
+/* line 51, ../sass/_slider.scss */
 html[xmlns] .slides {
   display: block;
 }
 
-/* line 47, ../sass/_slider.scss */
+/* line 52, ../sass/_slider.scss */
 * html .slides {
   height: 1%;
 }
@@ -469,19 +568,19 @@ html[xmlns] .slides {
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
  * include js that eliminates this class on page load */
-/* line 52, ../sass/_slider.scss */
+/* line 57, ../sass/_slider.scss */
 .no-js .slides > li:first-child {
   display: block;
 }
 
 /* FlexSlider Default Theme
 *********************************/
-/* line 56, ../sass/_slider.scss */
+/* line 61, ../sass/_slider.scss */
 .flexslider {
   position: relative;
 }
 
-/* line 57, ../sass/_slider.scss */
+/* line 62, ../sass/_slider.scss */
 .flex-viewport {
   max-height: 2000px;
   -webkit-transition: all 1s ease;
@@ -490,18 +589,18 @@ html[xmlns] .slides {
   transition: all 1s ease;
 }
 
-/* line 58, ../sass/_slider.scss */
+/* line 63, ../sass/_slider.scss */
 .loading .flex-viewport {
   max-height: 300px;
 }
 
 /* Direction Nav */
-/* line 60, ../sass/_slider.scss */
+/* line 65, ../sass/_slider.scss */
 .flex-direction-nav {
   *height: 0;
 }
 
-/* line 61, ../sass/_slider.scss */
+/* line 66, ../sass/_slider.scss */
 .flex-direction-nav a {
   display: block;
   margin: -18px 0 0;
@@ -517,56 +616,134 @@ html[xmlns] .slides {
   transition: all .3s ease;
 }
 
-/* line 75, ../sass/_slider.scss */
+/* line 80, ../sass/_slider.scss */
 .flex-direction-nav .flex-prev {
   left: -50px;
 }
 
-/* line 76, ../sass/_slider.scss */
+/* line 81, ../sass/_slider.scss */
 .flex-direction-nav .flex-next {
   right: -50px;
   text-align: right;
 }
 
-/* line 77, ../sass/_slider.scss */
+/* line 82, ../sass/_slider.scss */
 .flexslider:hover .flex-prev {
   opacity: 0.7;
   left: 10px;
 }
 
-/* line 78, ../sass/_slider.scss */
+/* line 83, ../sass/_slider.scss */
 .flexslider:hover .flex-next {
   opacity: 0.7;
   right: 10px;
 }
 
-/* line 79, ../sass/_slider.scss */
+/* line 84, ../sass/_slider.scss */
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
   opacity: 1;
 }
 
-/* line 80, ../sass/_slider.scss */
+/* line 85, ../sass/_slider.scss */
 .flex-direction-nav .flex-disabled {
   opacity: 0 !important;
   filter: alpha(opacity=0);
   cursor: default;
 }
 
-/* line 81, ../sass/_slider.scss */
+/* line 86, ../sass/_slider.scss */
 .flex-direction-nav a.flex-next:before {
   content: '';
 }
 
 @media screen and (max-width: 860px) {
-  /* line 85, ../sass/_slider.scss */
+  /* line 90, ../sass/_slider.scss */
   .flex-direction-nav .flex-prev {
     opacity: 1;
     left: 10px;
   }
 
-  /* line 86, ../sass/_slider.scss */
+  /* line 91, ../sass/_slider.scss */
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 10px;
   }
+}
+/* line 1, ../sass/_prefooter.scss */
+.prefooter {
+  margin-top: 74px;
+  border-top: 1px solid #3c5e1f;
+  border-bottom: 1px solid #3c5e1f;
+  padding: 2px 0;
+}
+/* line 9, ../sass/_prefooter.scss */
+.prefooter ul.prefooter-menu {
+  border-top: 1px solid #3c5e1f;
+  border-bottom: 1px solid #3c5e1f;
+  padding: 15px 0;
+  text-align: justify;
+  line-height: 0;
+}
+/* line 18, ../sass/_prefooter.scss */
+.prefooter ul.prefooter-menu:after {
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  content: '';
+  display: inline-block;
+}
+/* line 27, ../sass/_prefooter.scss */
+.prefooter ul.prefooter-menu > li {
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  vertical-align: top;
+}
+/* line 35, ../sass/_prefooter.scss */
+.prefooter ul.prefooter-menu > li > a {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+/* line 40, ../sass/_prefooter.scss */
+.prefooter ul.prefooter-menu > li ul li {
+  display: block;
+}
+
+/* line 1, ../sass/_footer.scss */
+footer#footer {
+  padding: 45px 0;
+  font-size: 0.75em;
+  color: #507d29;
+}
+/* line 8, ../sass/_footer.scss */
+footer#footer ul {
+  text-align: center;
+}
+/* line 11, ../sass/_footer.scss */
+footer#footer ul li {
+  display: inline-block;
+}
+/* line 14, ../sass/_footer.scss */
+footer#footer ul li:after {
+  display: inline;
+  content: "|";
+}
+/* line 19, ../sass/_footer.scss */
+footer#footer ul li:last-child::after {
+  display: none;
+}
+/* line 23, ../sass/_footer.scss */
+footer#footer ul li a {
+  margin: 0 5px;
+}
+/* line 29, ../sass/_footer.scss */
+footer#footer .f-bottom {
+  padding-left: 160px;
+  padding-top: 25px;
+}
+/* line 33, ../sass/_footer.scss */
+footer#footer .f-bottom img {
+  padding-right: 5px;
+  vertical-align: sub;
 }
