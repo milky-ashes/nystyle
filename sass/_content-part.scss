@@ -13,8 +13,8 @@
   
   .i-block{
     position: relative;
-    
-    span.i-text{
+   
+     span.i-text{
       display: block;
       position: absolute;
       bottom: 0;
@@ -34,6 +34,8 @@
       }
       letter-spacing: 0.05em;
     }
+    
+   
     
     &.w-text{
       height: 220px;
@@ -96,7 +98,6 @@
     border: 1px solid $border-green;
     position: relative;
     padding: 10px;
-    height: 460px;
     
     .t-top{
       padding-top: 25px;
@@ -152,6 +153,125 @@
         margin-right: 10px;
       }
     }
+    
   }
   //end
+}
+
+// for animation
+
+.card{
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.7s;
+  -moz-transition: -moz-transform 0.7s;
+  -o-transition: -o-transform 0.7s;
+  transition: transform 0.7s;
+  display: block;
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  transform-origin: top center;
+  
+  &.b-card{
+    width: 460px;
+    height: 460px;
+  }
+  
+  &.s-card{
+    width: 220px;
+    height: 220px;
+  }
+  
+  &.m-card{
+    width: 460px;
+    margin-bottom: 20px;
+    height: 220px;    
+  }
+}
+
+.card.hover {
+  -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+  transform:rotateY(180deg);
+}
+
+
+.i-block {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+}
+
+.i-block.face, .i-block.back {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.i-block.back{
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.m-card{
+  .c-card{
+    width: 255px;
+  }
+  
+  .i-block.back{
+    padding: 18px;
+    
+    .t-top{
+      padding-top: 0;
+      margin-top: -3px;
+      
+      span{
+        font-size: 22px;
+        
+        &.name{
+          font-size: 35px;
+        }
+      }
+    }
+    .t-bottom .c-block{
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+.s-card{
+  
+  .i-block.back{
+    padding: 15px;
+    
+    .t-top{
+      padding-top: 0;
+      
+      span{
+        font-size: 19px;
+        
+        &.name{
+          font-size: 26px;
+          padding-bottom: 0;
+        }
+      }
+    }
+    .t-bottom .c-block{
+      margin: 0;
+      padding: 0;
+    }
+  }
 }

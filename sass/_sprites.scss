@@ -11,3 +11,11 @@ $icons: sprite-map("icon/*.png");
 .flex-direction-nav .flex-prev {
   @include icon-sprite(arrow-l);
 }
+
+.e-form input[type=checkbox] + label:before{
+  @include icon-sprite(check);
+}
+
+.e-form input[type=checkbox]:checked + label:before{
+  @include icon-sprite(checked);
+}

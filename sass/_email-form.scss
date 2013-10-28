@@ -1,0 +1,145 @@
+.l-block{
+  position: relative;
+}
+
+.e-block{
+  position: absolute;
+  top: 100%;
+  left: -154px;
+  background: $bg-white;
+  width: 323px;
+  height: 470px;
+  margin-top: 11px;
+  padding: 18px 20px;
+  color: $color-grey;
+  font:{
+    size: $font-14;
+  }
+  line-height: 1.286em; // 18/14
+  z-index: 100;
+  display: none;
+  
+  &:after{
+    @include triangle(up, $bg-white, 11px);
+      top: -10px;
+      left: 160px;
+    
+  }
+  
+  .d-head{
+    text:{
+      transform: uppercase;
+      align: center;
+    }
+    display: block;
+    color: $color-green;
+    font-size: 1.286em; //18/14
+    border-bottom: 1px solid $border-m-green;
+    padding-bottom: 10px;
+    margin-bottom: 2px;
+  }
+  
+  .e-form{
+    border-top: 1px solid $border-m-green;
+    padding-top: 10px;
+    
+    p{
+      padding-bottom: 15px;
+      
+      &.note{
+        padding: 0 20px 5px;
+        font-size: 0.857em; //12/14
+        line-height: 1.333em; //16/12
+      }
+    }
+    
+    .e-input{
+      display: block;
+      border: 1px solid $border-grey;
+      height: 32px;
+      padding: 0 5px;
+      width: 100%;
+      margin-bottom: 11px;
+      font-family: $font-raleway;
+      
+      &:-moz-placeholder{
+        text-transform: uppercase;
+        color: #4a7225;
+        font:{
+          weight: bold;
+          size: 0.857em; //12/14
+        }
+      }
+      
+      &::-moz-placeholder{
+        text-transform: uppercase;
+        color: #4a7225;
+        font:{
+          weight: bold;
+          size: 0.857em; //12/14
+        }
+      }
+      
+      &::-webkit-input-placeholder{
+        text-transform: uppercase;
+        color: #4a7225;
+        font:{
+          weight: bold;
+          size: 0.857em; //12/14
+        }
+      }   
+      
+      &:-ms-input-placeholder{
+        text-transform: uppercase;
+        color: #4a7225;
+        font:{
+          weight: bold;
+          size: 0.857em; //12/14
+        }
+      }
+    }
+  }
+    // Checkbox
+  
+  input[type=checkbox]{
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    
+    + label {
+      cursor: pointer;
+      position: relative;
+      margin-left: 25px;
+      display: block;
+      
+      &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: -25px;
+        top: -3px;
+      }
+    }
+  }
+  .check-list{
+    padding: 0 20px;
+    font-size: 0.857em; //12/14
+  }
+}
+
+.button{
+  display: inline-block;
+  background: #8dc85a;
+  border-radius: 15px;
+  height: 30px;
+  padding: 0 30px 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #4a7225;
+  border: none;
+  box-shadow: inset 0 -1px 1px #54892e;
+  font-family: $font-raleway;
+}
+.button-part{
+  text-align: center;
+  padding-top: 10px;
+}

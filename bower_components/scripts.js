@@ -21,6 +21,21 @@ jQuery(document).ready(function(){
 
 	});
 	
-
+	$('[data-animate]').exists(function(){
+		$(this).on('click', function(e){
+			$(this).toggleClass("hover");
+			
+			e.preventDefault();
+		});
+	});
+	
+	$('[data-form]').exists(function(){ //change leater for css
+		$('[data-form="link"]').on('click', function(e){
+			
+			$('[data-form="form"]').slideToggle();
+			
+			e.preventDefault();
+		});
+	});
 	
 });

@@ -1,0 +1,36 @@
+@mixin triangle($direction, $color, $size){
+  
+  @if $direction == "left"{
+    border-bottom: $size outset transparent;
+    border-right: $size solid $color;
+    border-top: $size outset transparent;
+    border-left: $size outset transparent;
+  }
+  
+  @else if $direction == "right"{
+    border-bottom: $size outset transparent;
+    border-left: $size solid $color;
+    border-top: $size outset transparent;
+    border-right: $size outset transparent;
+  }
+  
+  @else if $direction == "up"{
+    border-bottom: $size solid $color;
+    border-left: $size outset transparent;
+    border-right: $size outset transparent;
+    border-up: $size outset transparent;
+  }
+  
+  @else if $direction == "down"{
+    border-right: $size outset transparent;
+    border-left: $size outset transparent;
+    border-top: $size solid $color;
+    border-down: $size outset transparent;
+  }
+  
+  height: 0;
+  width: 0;
+  display: block;
+  content: '';
+  position: absolute;
+}
