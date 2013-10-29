@@ -67,6 +67,10 @@ nav#navigation{
           weight: $font-bold;
           size: $font-18;
         }
+        
+        &.active{
+          color: $color-salat;
+        }
       }
       
       &.menu-item-1{

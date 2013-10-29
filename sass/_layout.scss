@@ -22,7 +22,7 @@ body{
   background: $bg-black;
   font:{
     size: $font-16;
-    weight: $font-medium;
+    weight: $font-normal;
     family: $font-raleway;
   }
   line-height: $line-height;
@@ -40,6 +40,10 @@ body{
   background: $bg-overlay;
 }
 
+.w-m{
+  margin-top: 50px;
+}
+
 .m-b-20{
   margin-bottom: 20px;
 }
@@ -50,4 +54,13 @@ body{
 
 .container-220{
   width: 220px;
+}
+.text-p{
+  padding-bottom: 22px;
+}
+
+.head-part{
+  width: 660px;
+  margin: 0 auto 50px;
+  font-weight: $font-medium;
 }

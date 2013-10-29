@@ -5,6 +5,7 @@
     bottom: 1px solid $border-l-green;
   }
   padding: 2px 0;
+  font-weight: $font-medium;
   
   ul.prefooter-menu{
     border:{
@@ -41,5 +42,22 @@
         display: block;
       }      
     }
+  }
+}
+
+.foot-block{
+  border-bottom: 1px solid $border-l-green;
+  padding-bottom: 50px;
+  position: relative;
+  margin-bottom: 3px;
+  
+  &:after{
+    border-bottom: 1px solid $border-l-green;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    content: "";
   }
 }

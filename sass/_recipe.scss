@@ -1,0 +1,101 @@
+.r-block{
+  .img-part{
+    width: 400px;
+    padding: 0 45px 0 80px;
+    position: relative;
+    
+    &:after{
+      display: block;
+      position: absolute;
+      content: "";
+      top: -35px;
+      left: 135px;
+    }
+    
+    img{
+      display: block;
+      border: 1px solid $border-green;
+    }
+  }
+  .text-part{
+    width: 321px;
+    border-right: 1px solid $border-green;
+    padding-right: 20px;
+    position: relative;
+    min-height: 260px;
+    
+    .blue-l{
+      font-size: $font-43;
+      margin-bottom: 20px;
+      line-height: 1em;
+    }
+    
+    .share-block{
+      padding-bottom: 25px;
+      a{
+        margin-right: 7px;
+        img{
+          vertical-align: middle;
+        }
+      }
+      
+      a:last-child::before{
+        content: "|";
+        display: inline;
+        padding-right: 10px;
+        
+      }
+    }
+    
+    .b-text{
+      font:{
+        weight: $font-semibold;
+        size: $font-15;
+      }
+      padding-bottom: 25px;
+    }
+    
+    a.grey-link{
+      color: $color-grey;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      text-decoration: underline;
+      
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  .s-img-part{
+    width: 160px;
+    text-align: center;
+    position: relative;
+    min-height: 260px;
+    
+    p{
+      font:{
+        size: $font-14;
+        weight: $font-semibold;        
+      }
+      line-height: 1.2em;
+      padding-bottom: 10px;
+    }
+    
+    .button{
+      position: relative;
+      top: -20px;
+    }
+  }
+}
+
+.recipe{
+  clear: both;
+  background: $bg-white;
+  margin-top: 20px;
+  width: 780px;
+  position: relative;
+  
+  
+}
+
