@@ -174,3 +174,23 @@ ul.text-list{
     }
   }
 }
+
+.all-link{
+  position: absolute;
+  right: 0;
+  top: 20px;
+  
+  a{
+   &:first-child{
+     &::after{
+       display: inline;
+       content: "|";
+     }
+   } 
+   &:last-child{
+     &::after{
+      display: none;
+     }
+   }
+  }
+}

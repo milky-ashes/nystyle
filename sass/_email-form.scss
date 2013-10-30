@@ -17,7 +17,12 @@
   }
   line-height: 1.286em; // 18/14
   z-index: 100;
-  display: none;
+  @include opacity(0);
+  
+  &.show{
+    @include opacity(1);
+    @include transition (all .3s ease-out 0s);
+  }
   
   &:after{
     @include triangle(up, $bg-white, 11px);
