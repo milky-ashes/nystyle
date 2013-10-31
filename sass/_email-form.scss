@@ -18,17 +18,19 @@
   line-height: 1.286em; // 18/14
   z-index: 100;
   @include opacity(0);
+  display: none;
   
   &.show{
+    display: block;
     @include opacity(1);
-    @include transition (all .3s ease-out 0s);
+    @include transition (opacity .3s ease-out 0s);
   }
   
   &:after{
     @include triangle(up, $bg-white, 11px);
       top: -10px;
-      left: 160px;
-    
+      left: 50%;
+      margin-left: -6px;    
   }
   
   .d-head{
@@ -134,10 +136,38 @@
     padding: 0 20px;
     font-size: 0.857em; //12/14
   }
+  
+  &.content-form{
+    position: relative;
+    @include opacity(1);
+    display: block;
+    left: 0;
+    top: -20px;
+    height: auto;
+    width: 460px;
+    margin-left: 240px;
+    
+    &:after{
+      @include triangle(up, $bg-white, 20px);
+      margin-left: -20px;
+      top: -20px;
+    }
+    
+    .e-form{      
+      border: 0;
+      padding: 0 75px;
+      
+      .t-c{
+        padding-bottom: 0;
+        margin-bottom: -15px;
+      }
+      
+    }
+  }
 }
 
 
-.button-part{
+.button-part{ 
   text-align: center;
   padding-top: 10px;
 }
