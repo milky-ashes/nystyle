@@ -1,0 +1,92 @@
+.o-style{
+  width: 730px;
+  text-align: center;
+  margin: 0 auto;
+  
+  p{
+    padding-bottom: 25px;
+  }
+  
+  .logo-img{
+    margin: -20px 0 -35px;
+  }
+  
+}
+
+.o-list{
+  padding-bottom: 30px;
+  border-bottom: 1px solid $border-green;
+  margin-bottom: 30px;
+  
+  li{
+    position: relative;
+    width: 220px;
+    margin-right: 20px;
+    float: left;
+    
+    &:nth-child(4n){
+      margin-right: 0;
+    }
+    
+    
+    
+    span{
+      &.i-part{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 35px;
+        background: $bg-i-text;
+        font:{
+          size: $font-14;
+          weight: $font-semibold;
+        }
+        text:{
+          transform: uppercase;
+          align: center;
+        }
+        color: $color-white;
+        line-height: 1em;
+      }
+      
+      &.i-text{
+        
+        letter-spacing: 0.05em;
+        display: table-cell;
+        width: 220px;
+        vertical-align: middle;
+        height: 35px;
+      }
+    }   
+    
+  }
+}
+
+.o-brand{
+  .button-part{
+    padding-top: 30px;
+  }
+}
+
+.brand-logos{
+  background: $bg-white;
+  position: relative;
+  margin-top: 30px;
+  display: none;
+  
+  &:after{
+    @include triangle(up, $bg-white, 20px);
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: -20px;
+  }
+  ul{
+    li{
+      display: block;
+      float: left;
+    }
+  }
+}

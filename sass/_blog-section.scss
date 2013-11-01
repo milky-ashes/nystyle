@@ -1,0 +1,112 @@
+.blog-section{
+  > header{
+    padding-bottom: 20px;
+    
+    h1{
+      font-size: $font-43;
+      float: left;
+      width: 650px;
+      text-transform: none;
+      text-align: left;
+    }
+    
+    .share-block{
+      text-transform: uppercase;
+      span{
+        color: $color-green;
+        font:{
+          size: $font-15;
+          weight: $font-bold;
+        }
+        position: relative;
+        top: -10px;
+        margin-right: 3px;
+      }
+      
+      a{
+        margin-left: 7px;
+      }
+    }
+  }
+}
+
+.blog-body{
+  .year-block{
+    border-top: 1px solid $border-green;
+    
+    span.year{
+      display: block;
+      font:{
+        size: $font-21;
+        weight: $font-bold;
+      }
+      color: $color-salat;
+      padding-top: 15px;
+    }
+    
+    .old-post{
+      padding: 20px 0 15px;
+      border-bottom: 1px solid $border-green;
+       
+      span{
+        display: block;
+        
+        &.date{
+          font-style: italic;
+        }
+      }
+      
+      img{
+        display: block;
+        border: 1px solid $border-green;
+        margin: 10px 0;
+      }
+    }
+  }
+  
+  article.blog{
+    background: $bg-white;
+    position: relative;
+    padding: 35px 30px 25px;
+    
+    &:after{
+      @include triangle(up, $bg-white, 20px);
+      position: absolute;
+      top: -20px;
+      left: 65px;
+    }
+    header{
+      padding-bottom: 20px;
+      
+      h1{
+        text-align: left;
+        font-size: $font-30;
+        margin-bottom: 10px;
+        text-transform: none;
+      }
+      .date{
+        font:{
+          size: $font-14;
+          weight: $font-semibold;
+        }
+      }
+    }
+    .article-body{
+      font:{
+        size: $font-14;
+        weight: $font-medium;
+      }
+      line-height: 1.643em; // 23/14
+      color: #333;
+      
+      img.left{
+        padding: 0 10px 10px 0;
+      }
+      
+      img.right{
+        padding: 0 0 10px 10px;
+      }
+    }
+  
+  }
+}

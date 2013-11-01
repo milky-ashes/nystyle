@@ -75,4 +75,12 @@ jQuery(document).ready(function(){
 		});
 	});
 	
+	// for brand
+	$('[data-brand]').exists(function(){ //change for css		
+		$('[data-brand="true"]').on('click', function(e){
+			$('[data-brand="open"]').slideToggle();
+			e.preventDefault();
+		});
+	});
+	
 });

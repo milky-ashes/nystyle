@@ -1,0 +1,111 @@
+.promo-text{
+  width: 521px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+  
+  img{
+    border: 1px solid $border-green;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .button-part{
+    padding-top: 25px;
+  }
+}
+
+.coupon-text{
+  width: 534px;
+  height: 227px;
+  margin: 0 auto;
+  color: $color-black;
+  background: $bg-white;
+  padding: 20px 15px;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  
+  &:before{
+    @include triangle(up, $bg-white, 20px);
+    top: -20px;
+    left: 50%;
+    margin-left: -20px;
+  }
+  
+  .l-text{
+    font:{
+      weight: $font-bold;
+      size: $font-49;
+    }
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    
+    b{
+      font-size: 1.243em; //61/49
+    }
+  }
+  
+  p{
+    font-size: $font-26;
+    font-weight: $font-medium;
+    padding-bottom: 15px;
+  }
+  
+  + .button-part{
+    position: relative;
+    z-index: 5;
+    padding-bottom: 45px;
+  }
+}
+
+.half-c{
+  width: 459px;
+  color: #333;
+  
+  p.large{
+    font:{
+      weight: $font-medium;
+      size: $font-30;
+    }
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+  .sign-text{
+    background: $bg-white;
+    position: relative;
+    padding: 17px 25px 15px;
+    height: 106px;
+    
+    &:after{
+      @include triangle(up, $bg-white, 17px);
+      position: absolute;
+      left: 50%;
+      margin-left: -17px;
+      top: -17px;
+    }
+  }
+  
+  .text{
+    display: table-cell;
+    height: 75px;
+    vertical-align: middle;
+  }
+  
+  &.left{
+    .text{
+      width: 310px;
+    }
+    
+    img{
+      padding-right: 30px;
+    }
+  }
+  
+  &.right{
+    .text{
+      text-align: center;
+    }
+  }
+}

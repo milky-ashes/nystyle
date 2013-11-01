@@ -328,4 +328,21 @@
   }
 }
 
+.l-section{  
+  .maps{
+    margin-top: 30px;
+    padding: 25px 0 40px;
+    border-bottom: 1px solid $border-green;
+  }
+  .l-foot{
+    padding-top: 30px;
+  
+    .foot-p{
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: $font-24;
+      font-weight: $font-medium;
+    }
+  }
+}
 

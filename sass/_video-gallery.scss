@@ -1,0 +1,26 @@
+.v-gallery{
+  width: 645px;
+  margin: 0 auto;
+  padding-bottom: 45px;
+  
+  .top-gallery{
+    margin-bottom: 50px;
+  }
+  
+  .bottom-gallery{
+    
+    ul{
+      display: block;
+      text-align: center;
+      
+      li{
+        display: inline-block;
+        margin: 0 9px;
+        
+        a{
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
