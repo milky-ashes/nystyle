@@ -1,0 +1,9 @@
+{
+  "name": "ny-style",
+  "version": "1.0.0",
+  "dependencies": {
+      "flexslider": "git://github.com/woothemes/FlexSlider.git",
+      "jquery": "git://github.com/components/jquery.git",
+      "modernizr": "git://github.com/components/modernizr.git"
+  }
+}

@@ -1,0 +1,29 @@
+$icon-sprite-dimensions: true;
+$icon-layout:smart;
+@import "icon/*.png";
+@include all-icon-sprites;
+$icons: sprite-map("icon/*.png");
+
+.flex-direction-nav .flex-next {
+  @include icon-sprite(arrow-r);
+}
+
+.flex-direction-nav .flex-prev {
+  @include icon-sprite(arrow-l);
+}
+
+.product-list a:before, .question:before{
+  @include icon-sprite(search-button);
+}
+
+ul.text-list li:before{
+  @include icon-sprite(dot);
+}
+
+.v-player:after{
+  @include icon-sprite(v-big);
+}
+
+ul.v-items li:after{
+  @include icon-sprite(v-small);
+}

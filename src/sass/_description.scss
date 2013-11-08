@@ -1,0 +1,62 @@
+.description{
+  opacity: 0;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 200px;
+  color: $color-black;
+  font-weight: $font-bold;
+  text-align: center;
+  background: $bg-white;
+  padding: 20px;
+  z-index: 200;
+  
+  &:after{
+   @include triangle(down, $bg-white, 20px);
+   bottom: -20px;
+   left: 50%;
+   margin-left: -20px;
+  }
+  p{
+    display: table-cell;
+    height: 160px;
+    vertical-align: middle;
+    width: 120px;
+  }
+  
+  img{
+    display: block;
+  }
+  
+  &.show{
+    display: block;
+    opacity: 1;
+  }
+  
+  &.right-description{
+    bottom: -20px;
+    left: 125px;
+    margin-left: 20px;
+    padding: 20px 40px;
+    width: auto;
+    height: auto;
+    margin-left: 40px;
+    
+    &:after{
+     @include triangle(left, $bg-white, 20px);
+     bottom: 40px;
+     left: -40px;
+     margin: 0;
+    }
+    
+    .inner-description{
+      background: #FFFFFF;
+      bottom: 0;
+      left: 0;
+      padding: 20px 40px;
+      position: absolute;
+    }
+  }
+}

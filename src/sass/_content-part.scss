@@ -1,0 +1,352 @@
+.content-part{
+  //image block on index page
+  .i-social{
+    div{
+      margin-right: 20px;
+      float: left;
+      
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  
+  .i-block{
+    position: relative;
+   
+     span.i-text{
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 35px;
+      line-height: 35px;
+      background: $bg-i-text;
+      text:{
+        transform: uppercase;
+        align: center;
+      }
+      color: $color-white;
+      font:{
+        size: $font-17;
+        weight: $font-semibold;
+      }
+      letter-spacing: 0.05em;
+    }
+    
+   
+    
+    &.w-text{
+      height: 220px;
+      text-align: center;
+      
+      .box-text{
+        display: table-cell;
+        width: 220px;
+        height: 185px;
+        vertical-align: middle;
+        color: $color-black; 
+        font:{
+          size: $font-17;
+          weight: $font-semibold;
+        }
+        padding: 0 20px;
+        float: none;
+        margin: 0;
+      }
+    }
+    
+    &.green-bg{
+      background: $bg-l-green;
+      @include box-shadow(inset 0 0 20px rgba(0,0,0,0.44));
+    }
+    
+    &.blue-bg{
+      background: $bg-l-blue;
+      @include box-shadow(inset 0 0 20px rgba(0,0,0,0.44));
+    }
+    
+    .c-flag{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    
+    .s-flag{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: 32px;
+      width: 31px;
+      @include border-radius(16px);
+      
+      &.s-dark{
+        @include box-shadow(0 0 9px rgba(0,0,0,0.5));
+      }
+      
+      &.s-light{
+        @include box-shadow(0 0 9px rgba(255,255,255,0.65));
+      }
+      
+      img{
+        position: relative;
+        left: -1px;
+      }
+    }
+  }
+  
+  .i-block.back{
+    border: 1px solid $border-green;
+    position: relative;
+    padding: 10px;
+    
+    .t-top{
+      padding-top: 25px;
+      span{
+        display: block;
+        font-size: $font-30;
+        line-height: 1em;
+        
+        &.name{
+          font-size: $font-53;
+          padding: 15px 0 20px;
+        }
+        
+      }
+      
+      .icon-close{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+    
+    .t-bottom{
+      overflow: hidden;
+      
+      .c-block{
+        margin-left: 260px;
+        padding-top: 75px;
+        
+        .l-part{
+          a:first-child{
+            
+           &::after{
+              display: inline;
+              content: "|";
+              padding-left: 4px;
+            } 
+          }
+        }
+      }
+    }
+    
+    .share-block{
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 177px;
+      text-align: justify;
+      
+      span{
+        vertical-align: super;
+        margin-right: 10px;
+      }
+    }
+    
+  }
+  //end
+}
+
+// for animation
+
+.card{
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.7s;
+  -moz-transition: -moz-transform 0.7s;
+  -o-transition: -o-transform 0.7s;
+  transition: transform 0.7s;
+  display: block;
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  transform-origin: top center;
+  
+  &.b-card{
+    width: 460px;
+    height: 460px;
+  }
+  
+  &.s-card{
+    width: 220px;
+    height: 220px;
+  }
+  
+  &.m-card{
+    width: 460px;
+    margin-bottom: 20px;
+    height: 220px;    
+  }
+}
+
+.card.hover {
+  -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+  transform:rotateY(180deg);
+}
+
+
+.i-block {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+}
+
+.i-block.face, .i-block.back {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.i-block.back{
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.m-card{
+  .c-card{
+    width: 255px;
+  }
+  
+  .i-block.back{
+    padding: 18px;
+    
+    .t-top{
+      padding-top: 0;
+      margin-top: -3px;
+      
+      span{
+        font-size: 22px;
+        
+        &.name{
+          font-size: 35px;
+        }
+      }
+    }
+    .t-bottom .c-block{
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+.s-card{
+  
+  .i-block.back{
+    padding: 15px;
+    
+    .t-top{
+      padding-top: 0;
+      
+      span{
+        font-size: 19px;
+        
+        &.name{
+          font-size: 26px;
+          padding-bottom: 0;
+        }
+      }
+    }
+    .t-bottom .c-block{
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.shop-list{
+  border-bottom: 1px solid $border-green;
+  padding:  30px 0 25px;
+  margin-bottom: 30px;
+  
+  li{
+    display: block;
+    float: left;
+    margin: 0 20px 20px 0; 
+    
+    &:nth-child(4n){
+      margin-right: 0;
+    }
+    
+    a{
+      display: block;
+      position: relative;
+      width: 220px;
+      height: 220px;
+      color: $color-black;
+      
+      
+      span.i-part{
+        display: none;
+        height: 220px;
+        width: 220px;
+        background: rgba(180,231,248,.86);
+        @include box-shadow(inset 0 0 20px rgba(0,0,0,.8));
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        span.i-text{
+          text-transform: uppercase;
+          font-size: $font-23;
+          display: table-cell;
+          width: 220px;
+          height: 220px;
+          vertical-align: middle;
+          text-align: center;
+          padding: 5px;
+          text-decoration: underline;
+        }
+      }
+      
+      &:hover{
+        span.i-part{
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.l-section{  
+  .maps{
+    margin-top: 30px;
+    padding: 25px 0 40px;
+    border-bottom: 1px solid $border-green;
+  }
+  .l-foot{
+    padding-top: 30px;
+  
+    .foot-p{
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: $font-24;
+      font-weight: $font-medium;
+    }
+  }
+}
+

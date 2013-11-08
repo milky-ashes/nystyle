@@ -1,4 +1,4 @@
-$.fn.extend({
+jQuery.fn.extend({
   exists: function(callback) {
     if (this.length > 0) {
       if (callback != null) {
@@ -11,7 +11,7 @@ $.fn.extend({
   }
 });
 
-jQuery(document).ready(function(){
+jQuery(document).ready(function($){
 
 	//for slider
 
@@ -45,7 +45,7 @@ jQuery(document).ready(function(){
 		});
 
 		$(document).on('click', function(e){
-			if (!$(e.target).closest('[data-form="link"]').length) {
+			if(!($('.e-block').has($(e.target)).length > 0) && !$(e.target).closest('[data-form="link"]').length){
 				$('[data-form="form"]').removeClass('show');
 			}
 		});
@@ -91,5 +91,76 @@ jQuery(document).ready(function(){
 		$(this).find('img').attr('src', mainSrc)
 
 	})
+	
+	//for product-page link hover
 
+	$('[data-link]').each(function(){
+		$(this).hover(function(e){
+			$(this).next().toggleClass("show");
+		});
+	});
+	
+	$('[data-nutrition]').each(function(){
+		$(this).on('click',function(e){
+			$(this).next().toggleClass("show");
+		});
+	});
+
+	//for recipe-form
+	$('[data-recipe-form="link"]').each(function(){
+		$(this).on('click',function(e){
+			$(this).addClass("hide");
+			$('[data-recipe-form="form"]').addClass('show');
+			e.preventDefault();
+		});
+		$('[data-recipe-form="close"]').on('click',function(e){
+			$('[data-recipe-form="link"]').removeClass("hide");
+			$('[data-recipe-form="form"]').removeClass('show');
+			e.preventDefault();
+		});
+	});
+	
+	
+	// Video Gallery handler
+	$('#js-video-gallery').exists(function() {
+		var gallery = $(this),
+			videos = gallery.find('.js-video-item'),
+			preview = $('#js-video-preview'),
+			iframe = $('#js-video-iframe');
+
+		// Push clicked thumbnail to player continer
+		videos.on('click', function(e) {
+			e.preventDefault();
+			slide( $(this) );
+		});
+
+		// Play video when preview is clicked
+		preview.on('click', function(e) {
+			e.preventDefault();
+
+			iframe.attr('src', preview.attr('video'));
+			gallery.addClass('playing');
+		})
+
+		// Push first video on page load
+		slide( videos.get(0) );
+
+		/**
+		 * Setup video player
+		 * @param  {object} video jQuery link object (contains video attribute and thumbnail inside)
+		 * @return {void}
+		 */
+		function slide( video ) {
+
+			video = $(video);
+
+			// Reset previous video
+			iframe.attr('src', '');
+			gallery.removeClass('playing');
+
+			// Set new video
+			preview.attr( 'src', video.find('img').attr('src') );
+			preview.attr( 'video', video.attr('data-video') );
+		}
+	});
 });
