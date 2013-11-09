@@ -1,0 +1,424 @@
+@media only screen and (max-width: 480px) {
+  .container{
+    width: 100%;
+    padding:  0 10px;
+  }
+  body{
+    font-size: $font-12;
+  }
+  header#header{
+    ul.s-list{ 
+      float: none;
+      width: 100%;
+      text-align: justify;
+      
+      &:after{
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        content: '';
+        display: inline-block;
+      }
+      
+      li{
+        display: inline-block;
+        float: none;
+        margin: 0;
+      }
+    }
+  } 
+  
+  .container-460{
+    width: 100%;
+    margin-bottom: 20px;
+    float: none;
+    height: auto;
+    
+    .card.b-card{
+      width: 300px;
+      height: auto;
+      height: 300px;
+      
+      .i-block.back .t-bottom{
+        img.left{
+          width: 100px;
+        }
+        .c-block{
+          margin-left: 110px;
+          padding-top: 0;
+        } 
+      }
+    }
+    
+    .i-block.face{
+      img{
+        width: 100%;
+      }
+    }
+    
+    .card.m-card{
+      width: 300px;
+      height: 142px;
+      
+      .i-block.face{
+        width: 100%;
+      }
+      
+      .i-block.back{
+        padding: 10px;
+        
+        img.left{
+          width: 95px;
+        }
+        
+        .c-card{
+          width: 170px;
+        }
+        .t-top{
+          padding-top: 0;
+          margin-top: 0;
+          span{
+            font-size: $font-16;
+            
+            &.name{
+              font-size: $font-26;
+              padding: 5px 0 0;
+            }
+          }
+        }
+        .t-bottom{
+          .c-block{
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  .content-part .i-block.back .t-top{
+    padding-top: 10px;    
+  }
+  
+  
+  .prefooter ul.prefooter-menu{
+    padding: 0;
+    
+    > li{
+      display: block;
+      float: none;
+      width: 100%;
+      border-bottom: 1px solid $border-green;
+      padding: 5px 0;
+      
+      &:last-child{
+        border-bottom: 0;
+      }
+      
+      a{
+        text-decoration: none;
+      }
+      
+      ul{
+        display: none;
+      }
+    }    
+  }
+  
+  .container-220{
+    float: none;
+    margin-bottom: 20px;
+  }
+  
+  .prefooter{
+    margin-top: 30px;
+  }
+  
+  .content-part {
+    img{
+      width: 100%;
+    }
+    a{
+      img{
+        width: auto;
+      }
+    }
+  }
+  //for faq page
+  ul.faq-list{
+    width: 100%;
+  }
+  
+   ul.img-list li{
+    margin-bottom: 20px;
+  }
+  
+  //form answer
+  .feedback-form{
+    width: 100%;   
+    .half-col{
+      .input-block{
+        width: 100%;
+      }
+      .e-input.m-input{
+        width: 100%;
+      }
+      select{
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .blog-section {
+    > header h1{
+      width: 100%;
+    }
+    
+    .container-190{
+      width: 100%;
+      float: none;
+      
+      .year-block .old-post img{
+        display: none;
+      }
+    }
+    
+    .container-700{
+      width: 100%;
+    }
+  }
+  
+  //for our styles page
+  
+  .v-gallery{
+    width: 100%;
+    
+    .v-player:after{
+      left: 50%;
+      margin-left: -61px;
+      margin-top: -83px;  
+      top: 50%;
+      @include transform(scale(0.5));
+    }
+  }
+  
+  .o-style{
+    width: 100%;
+  }
+  
+  //for product-page
+  .product-article{
+    .p-285{
+      width: 100%;
+      padding: 0;
+      
+      img{
+        width: auto;
+      }
+    }
+    
+    .p-620{
+      width: 100%;
+    }
+  }
+  
+  //for product-landing
+  .column-w-logo .a-text .half-t{
+    width: 100%;
+    float: none;
+    text-align: center;
+    
+    img{
+      display: none;
+    }
+  }
+  
+  //for promotions
+  .promo-text, .coupon-text{
+    width: 100%;
+  }
+  .coupon-text{
+    height: 170px;
+  }
+  
+  .sign-text img{
+    width: auto;
+  }
+  .half-c{
+    width: 100%;
+    
+    .button-part{
+      margin-bottom: 10px;
+    }
+  }
+  
+  //for recipe details
+  .head-part{
+    width: 100%;
+  }
+  .img-part, .s-img-part{
+    display: none;
+  }
+  .open.recipe{
+    width: 100%;
+    margin-left: 0;
+  }
+  .r-block .text-part a.grey-link{
+    position: relative;
+  }
+  
+  //for share news
+  .e-block.content-form{
+    margin-left: 0;
+    width: 100%;
+    padding: 0 20px;
+    
+    .e-form{
+      padding: 0 0 20px;
+    }
+    
+    img{
+      width: auto;
+    }
+  }
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 979px) {
+  .container{
+    width: 100%;
+  }
+  
+  header#header{
+    height: $header-height + 30;
+  }
+  
+  header#header .s-block{
+    overflow: hidden;
+  }
+  
+  nav#navigation ul.menu li a{
+    font-size: 14px;
+  }
+  
+  nav#navigation ul#menu-primary.menu{
+    margin-top: 100px;
+    text-align: justify;
+    
+    &:after{
+      width: 100%;
+      height: 0;
+      visibility: hidden;
+      overflow: hidden;
+      content: '';
+      display: inline-block;
+    }
+    
+    li{
+      padding: 0;
+      margin: 0;
+      border-bottom: 0;
+      display: inline-block;
+      float: none;
+    }
+  }
+  .card, .i-block{
+    margin-bottom: 20px;
+  }
+  
+  .container-460.right{
+    float: left;
+  }
+  
+  //for faq page
+  ul.faq-list{
+    width: 100%;
+  }
+  ul.img-list li{
+    margin-bottom: 20px;
+  }
+  
+  //form answer
+  .feedback-form{
+    width: 100%;   
+    .half-col{
+      .input-block{
+        width: 47%;
+      }
+      .e-input.m-input{
+        width: 65%;
+      }
+      select{
+        width: 30%;
+      }
+    }
+  }
+  
+  //for blog-page
+  
+  .blog-body{
+    .container-700{
+      float: none;
+      width: auto;
+      margin-left: 200px;
+    }
+  }
+  
+  //for our styles page
+  
+  .v-gallery{
+    width: 100%;
+  }
+  
+  .o-style{
+    width: 100%;
+  }
+  
+  //for product-page
+  .product-article{
+    .p-285{
+      padding: 0;
+    }
+    
+    .p-620{
+      float: none;
+      margin-left: 265px;
+      width: auto;
+      padding: 0;
+    }
+  }
+  
+  //for promotions 
+  .half-c{
+    width: 48%;
+  }
+  
+  //for recipe details
+  .head-part{
+    width: 100%;
+  }
+  .s-img-part{
+    display: none;
+  }
+  .r-block .img-part{
+    padding: 0;
+    width: 300px;
+  }
+  .r-block.w-right-part .text-part{
+    border-right: 0;
+  }
+  .r-block .text-part{
+    width: auto;
+    margin-left: 330px;
+    float: none;
+  }
+  .open.recipe{
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .recipe-list li:nth-child(4n){
+    margin-right: 20px;
+  }
+}

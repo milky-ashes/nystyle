@@ -10,9 +10,28 @@
       }
     }
   }
+  .i-block.back{
+    a{
+      display: inline;
+    }
+    .share-block{
+    
+      a, img{
+        display: inline-block;
+      }
+      
+    }
+  } 
   
   .i-block{
     position: relative;
+    
+    a{
+      display: block;
+      img{
+        display: block;
+      }
+    }
    
      span.i-text{
       display: block;

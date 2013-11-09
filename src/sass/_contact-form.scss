@@ -36,8 +36,16 @@
   }
   
   .half-col{
-    width: 350px;
+    .input-block{
+      width: 350px;
+      float: left;
+      
+      &:nth-child(2n){
+        float: right;
+      }
+    }
   }
+  
   .check-list{
     padding-bottom: 20px;
   }
